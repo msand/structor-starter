@@ -4,8 +4,8 @@
 *
 */
 
-const React = require('react');
-const {
+import React from 'react'
+import {
   // apis
   Animated,
   AppState,
@@ -30,9 +30,9 @@ const {
   TouchableHighlight,
   TouchableWithoutFeedback,
   View
-} = require('react-native-web');
+} from 'react-native-web'
 
-module.exports = class Placeholder extends React.Component {
+export default class Placeholder extends React.Component {
   render() {
     const {style} = this.props;
     return (
@@ -41,7 +41,7 @@ module.exports = class Placeholder extends React.Component {
       </View>
     );
   }
-}
+};
 
 const styles = StyleSheet.create({
   container: {
